@@ -1,0 +1,96 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+#navbar a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #001f3f, #0074D9);
+    color: white;
+    text-align: center;
+}
+
+#welcome-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+
+#projects {
+    padding: 2rem;
+    background: linear-gradient(to bottom, #f4f4f4, #cce0ff);
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #001f3f;
+}
+
+.project-tile {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    margin: 1rem;
+    display: inline-block;
+    width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333;
+    font-size: 1rem;
+}
+
+
+.project-tile.empty {
+    background: linear-gradient(135deg, #ddeeff, #aabbff);
+    color: #666;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+footer {
+    background: linear-gradient(to top, #0074D9, #001f3f);
+    padding: 2rem 0;
+    text-align: center;
+    color: white;
+}
+
+#profile-link {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    #welcome-section h1 {
+        font-size: 2rem;
+    }
+    #projects .project-tile {
+        width: 100%;
+    }
+}
